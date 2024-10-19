@@ -12,3 +12,8 @@ canonifyURLs = true
 [params]
   description = "Stickie With It - Your go-to method for fun, effective workouts using sticky notes!"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+

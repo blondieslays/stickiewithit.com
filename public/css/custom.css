@@ -1,0 +1,79 @@
+body {
+    background-color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    color: #e0218a;  /* Barbie Pink */
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Brush Script MT', cursive;
+    margin-top: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #e0218a;  /* Barbie Pink */
+}
+
+nav img {
+    margin: 0 15px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Stickie note tile container */
+.flip-container {
+    perspective: 1000px;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 20px;
+}
+
+/* Flip on hover */
+.flip-container:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+/* Flipping mechanism */
+.flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Front and Back faces of the tile */
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling the front */
+.front {
+    background-color: #ffff88;  /* Stickie note yellow */
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling the back */
+.back {
+    background-color: #e0218a;  /* Barbie pink */
+    color: white;
+    transform: rotateY(180deg);
+    font-size: 1.2em;
+    font-family: 'Arial', sans-serif;
+}
+
+

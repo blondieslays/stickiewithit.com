@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+</head>
+<body>
+    {{ block "main" . }}{{ .Content }}{{ end }}
+<h1>Stickie with it</h1>
+
+<nav>
+   <a href="/stickie-method">
+      <img src="/menu/yinyang.png" alt="Stickie Method">
+   </a>
+   <a href="/workout-descriptions">
+      <img src="/menu/strong.png" alt="Workout Descriptions">
+   </a>
+   <a href="/stickie-generator">
+      <img src="/menu/stickie.png" alt="Stickie Generator">
+   </a>
+   <a href="/learn-more">
+      <img src="/menu/mail.png" alt="Learn More">
+   </a>
+</nav>
+
+<div class="flip-container">
+   <div class="flipper">
+      <div class="front">
+         Stickie 1
+      </div>
+      <div class="back">
+         Content 1
+      </div>
+   </div>
+</div>
+
+<div class="flip-container">
+   <div class="flipper">
+      <div class="front">
+         Stickie 2
+      </div>
+      <div class="back">
+         Content 2
+      </div>
+   </div>
+</div>
+
+<div class="flip-container">
+   <div class="flipper">
+      <div class="front">
+         Stickie 3
+      </div>
+      <div class="back">
+         Content 3
+      </div>
+   </div>
+</div>
+
+
+
+</body>
+</html>
+

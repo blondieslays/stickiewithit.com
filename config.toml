@@ -1,0 +1,14 @@
+baseURL = "https://stickiewithit.ca/"
+languageCode = "en-us"
+title = "Stickie with it"
+enableRobotsTXT = true
+
+[pagination]
+pagerSize = 10
+
+defaultContentLanguage = "en"
+canonifyURLs = true
+
+[params]
+  description = "Stickie With It - Your go-to method for fun, effective workouts using sticky notes!"
+

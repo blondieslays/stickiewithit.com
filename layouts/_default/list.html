@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+</head>
+<body>
+    {{ block "main" . }}{{ .Content }}{{ end }}
+</body>
+</html>
+

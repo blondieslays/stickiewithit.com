@@ -1,91 +1,59 @@
-site-title {
-    font-family: 'Brush Script MT', cursive;
-    color: #e0218a;  /* Barbie Pink */
-    text-align: center;
-    font-size: 4em;  /* Adjust size as needed */
-    margin-top: 20px;
-    max-width: 800px;
-}
-
 h1 {
     font-family: 'Brush Script MT', cursive;
     color: #e0218a;  /* Barbie Pink */
     text-align: center;
-    font-size: 4em;  /* Large headline */
-    max-width: 800px;
+    font-size: 5em;  /* Large headline */
     margin-top: 20px;
 }
 
 body {
     background-color: white;
-    font-family: 'Lato', Arial, sans-serif;
-    max-width: 800px;
+	font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 2em;  
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: #e0218a;  /* Barbie Pink */
-    max-width: 800px;
+
+.homepage-tiles {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Space between the tiles */
 }
 
-nav img {
-    margin: 0 15px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
+.tile {
+  width: 100%;
+  height: auto;
+  perspective: 1000px;
 }
 
-/* Stickie note tile container */
-.flip-container {
-    perspective: 1000px;
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    margin: 20px;
-    max-width: 800px;
+.tile-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
 }
 
-/* Flip on hover */
-.flip-container:hover .flipper {
-    transform: rotateY(180deg);
+.tile:hover .tile-inner {
+  transform: rotateY(180deg);
 }
 
-/* Flipping mechanism */
-.flipper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: 0.6s;
-    transform-style: preserve-3d;
+.tile-front, .tile-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
 }
 
-/* Front and Back faces of the tile */
-.front, .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.tile-back {
+  transform: rotateY(180deg);
 }
 
-/* Styling the front */
-.front {
-    background-color: #ffff88;  /* Stickie note yellow */
-    color: black;
-    font-size: 1.2em;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Styling the back */
-.back {
-    background-color: #e0218a;  /* Barbie pink */
-    color: white;
-    transform: rotateY(180deg);
-    font-size: 1.2em;
-    font-family: 'Arial', sans-serif;
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 

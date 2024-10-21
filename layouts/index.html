@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta name="generator" content="Hugo 0.135.0">
-    <title>Stickie with It</title>
+    <title>{{ .Title }}</title>
     <link rel="stylesheet" href="/css/custom.css">
 </head>
 <body>
-    <h1>Stickie with It</h1>
-    <p>A bite-sized approach to building your own workout plan.</p>
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Params.description }}</p>
 
-    
+    <!-- Tile Container -->
     <div class="homepage-tiles">
-        
+        <!-- Tile 1: Bite-Sized Workouts -->
         <div class="tile">
             <div class="tile-inner">
                 <div class="tile-front">
@@ -23,7 +23,7 @@
             </div>
         </div>
 
-        
+        <!-- Tile 2: Personalized Fitness -->
         <div class="tile">
             <div class="tile-inner">
                 <div class="tile-front">
@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        
+        <!-- Tile 3: Confidence Building -->
         <div class="tile">
             <div class="tile-inner">
                 <div class="tile-front">
@@ -47,7 +47,7 @@
             </div>
         </div>
 
-        
+        <!-- Tile 4: Flexible & Fun -->
         <div class="tile">
             <div class="tile-inner">
                 <div class="tile-front">

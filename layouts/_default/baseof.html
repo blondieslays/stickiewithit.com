@@ -4,8 +4,8 @@
 <head>
     <title>{{ .Title }}</title>
 
-    <!-- Google Font for Lato -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <!-- Google Font for Roboto -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <!-- Link to Custom CSS -->
     <link rel="stylesheet" href="{{ "css/custom.css" | absURL }}">
@@ -15,58 +15,12 @@
     <!-- This h1 will show up on the webpage as a visible headline -->
     <h1 class="site-title">Stickie with it</h1>
 
-    <!-- Navigation bar inside the body -->
-    <nav>
-       <a href="/stickie-method">
-          <img src="/menu/yinyang.png" alt="Stickie Method">
-       </a>
-       <a href="/workout-descriptions">
-          <img src="/menu/strong.png" alt="Workout Descriptions">
-       </a>
-       <a href="/stickie-generator">
-          <img src="/menu/stickie.png" alt="Stickie Generator">
-       </a>
-       <a href="/learn-more">
-          <img src="/menu/mail.png" alt="Learn More">
-       </a>
-    </nav>
 
     <!-- This block renders the content from your .md files -->
     {{ block "main" . }}{{ .Content }}{{ end }}
 
-    <!-- Stickie note tiles -->
-    <div class="flip-container">
-       <div class="flipper">
-          <div class="front">
-             Stickie 1
-          </div>
-          <div class="back">
-             Content 1
-          </div>
-       </div>
-    </div>
 
-    <div class="flip-container">
-       <div class="flipper">
-          <div class="front">
-             Stickie 2
-          </div>
-          <div class="back">
-             Content 2
-          </div>
-      </div>
-    </div>
 
-    <div class="flip-container">
-       <div class="flipper">
-          <div class="front">
-             Stickie 3
-          </div>
-          <div class="back">
-             Content 3
-          </div>
-       </div>
-    </div>
 </body>
 </html>
 

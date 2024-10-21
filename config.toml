@@ -12,6 +12,24 @@ canonifyURLs = true
 [params]
   description = "Stickie With It - Your go-to method for fun, effective workouts using sticky notes!"
 
+ # Symbol images
+  symbol_yinyang = "/static/menu/yinyang.png"
+  symbol_strong = "/static/menu/strong.png"
+  symbol_stickie = "/static/menu/stickie.png"
+  symbol_mail = "/static/menu/mail.png"
+
+  # Homepage tile images
+  bite_sized_front = "/static/homepage-tiles/bite-sized-front.png"
+  bite_sized_back = "/static/homepage-tiles/bite-sized-back.png"
+  personal_front = "/static/homepage-tiles/personal-front.png"
+  personal_back = "/static/homepage-tiles/personal-back.png"
+  confidence_front = "/static/homepage-tiles/confidence-front.png"
+  confidence_back = "/static/homepage-tiles/confidence-back.png"
+  flexible_front = "/static/homepage-tiles/flexible-front.png"
+  flexible_back = "/static/homepage-tiles/flexible-back.png"
+
+
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

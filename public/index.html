@@ -1,64 +1,96 @@
 <!DOCTYPE html>
 <html>
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta name="generator" content="Hugo 0.135.0">
-    <title>Stickie with It</title>
-    <link rel="stylesheet" href="/css/custom.css">
+<head>
+	<meta name="generator" content="Hugo 0.135.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Stickie with It</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://localhost:1313/css/custom.css">
 </head>
+
 <body>
-    <h1>Stickie with It</h1>
-    <p>A bite-sized approach to building your own workout plan.</p>
+  
+  <nav class="symbol-menu">
+    <ul>
+<li><a href="/" title="Home"><img src="/menu-icons/home.png" alt="Home"></a></li>
+<li><a href="/gallery/stickie-method/" title="Stickie Method"><img src="/menu-icons/bite-sized.png" alt="Stickie Method"></a></li>
+<li><a href="/gallery/personalized-fitness/" title="Personalized Fitness"><img src="/menu-icons/personal.png" alt="Personalized Fitness"></a></li>
+<li><a href="/gallery/workouts/" title="Workouts"><img src="/menu-icons/confidence.png" alt="Workouts"></a></li>
+<li><a href="/gallery/learn-more/" title="Learn More"><img src="/menu-icons/flexible.png" alt="Learn More"></a></li> 
+    </ul>
+  </nav>
 
-    
-    <div class="homepage-tiles">
-        
-        <div class="tile">
-            <div class="tile-inner">
-                <div class="tile-front">
-                    <img src="/static/homepage-tiles/bite-sized-front.png" alt="Bite-Sized Workouts">
-                </div>
-                <div class="tile-back">
-                    <img src="/static/homepage-tiles/bite-sized-back.png" alt="Bite-Sized Workouts Info">
-                </div>
-            </div>
-        </div>
+  
+  
+<h1 class="site-title">Stickie with It</h1>
+<p>A bite-sized approach to building your own workout plan.</p>
 
-        
-        <div class="tile">
-            <div class="tile-inner">
-                <div class="tile-front">
-                    <img src="/static/homepage-tiles/personal-front.png" alt="Personalized Fitness">
-                </div>
-                <div class="tile-back">
-                    <img src="/static/homepage-tiles/personal-back.png" alt="Personalized Fitness Info">
-                </div>
-            </div>
-        </div>
 
-        
-        <div class="tile">
-            <div class="tile-inner">
-                <div class="tile-front">
-                    <img src="/static/homepage-tiles/confidence-front.png" alt="Confidence Building">
-                </div>
-                <div class="tile-back">
-                    <img src="/static/homepage-tiles/confidence-back.png" alt="Confidence Building Info">
-                </div>
-            </div>
-        </div>
 
-        
-        <div class="tile">
-            <div class="tile-inner">
-                <div class="tile-front">
-                    <img src="/static/homepage-tiles/flexible-front.png" alt="Flexible & Fun">
-                </div>
-                <div class="tile-back">
-                    <img src="/static/homepage-tiles/flexible-back.png" alt="Flexible & Fun Info">
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="homepage-tiles">
+
+<div class="tile">
+<div class="tile-inner">
+<div class="tile-front">
+<img src="/homepage-tiles/bite-sized-front.png" alt="Bite-Sized Workouts">
+</div>
+<div class="tile-back">
+<img src="/homepage-tiles/bite-sized-back.png" alt="Bite-Sized Workouts">
+</div>
+</div>
+</div>
+
+
+<div class="tile">
+<div class="tile-inner">
+<div class="tile-front">
+<img src="/homepage-tiles/personal-front.png" alt="Personalized Fitness">
+</div>
+<div class="tile-back">
+<img src="/homepage-tiles/personal-back.png" alt="Personalized Fitness">
+</div>
+</div>
+</div>
+
+
+<div class="tile">
+<div class="tile-inner">
+<div class="tile-front">
+<img src="/homepage-tiles/confidence-front.png" alt="Confidence Buiding">
+</div>
+<div class="tile-back">
+<img src="/homepage-tiles/confidence-back.png" alt="Confidence Building">
+</div>
+</div>
+</div>
+
+
+<div class="tile">
+<div class="tile-inner">
+<div class="tile-front">
+<img src="/homepage-tiles/flexible-front.png" alt="Flexible & Fun">
+</div>
+<div class="tile-back">
+<img src="/homepage-tiles/flexible-back.png" alt="Flexible & Fun">
+</div>
+</div>
+</div>
+</div>
+
+<script>
+    document.querySelectorAll('.tile').forEach(tile => {
+      tile.addEventListener('click', function() {
+        this.classList.toggle('flip');
+      });
+    });
+  </script>
+
+
+</body>
+
+
+
 
 </body>
 </html>

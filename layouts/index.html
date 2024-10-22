@@ -1,65 +1,69 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="generator" content="Hugo 0.135.0">
-    <title>{{ .Title }}</title>
-    <link rel="stylesheet" href="/css/custom.css">
-</head>
-<body>
-    <h1>{{ .Title }}</h1>
-    <p>{{ .Params.description }}</p>
+{{ define "main" }}
+<h1 class="site-title">{{ .Title }}</h1>
+<p>{{ .Params.description }}</p>
 
-    <!-- Tile Container -->
-    <div class="homepage-tiles">
-        <!-- Tile 1: Bite-Sized Workouts -->
-        <div class="tile">
-            <div class="tile-inner">
-                <div class="tile-front">
-                    <img src="/static/homepage-tiles/bite-sized-front.png" alt="Bite-Sized Workouts">
-                </div>
-                <div class="tile-back">
-                    <img src="/static/homepage-tiles/bite-sized-back.png" alt="Bite-Sized Workouts Info">
-                </div>
-            </div>
-        </div>
 
-        <!-- Tile 2: Personalized Fitness -->
-        <div class="tile">
-            <div class="tile-inner">
-                <div class="tile-front">
-                    <img src="/static/homepage-tiles/personal-front.png" alt="Personalized Fitness">
-                </div>
-                <div class="tile-back">
-                    <img src="/static/homepage-tiles/personal-back.png" alt="Personalized Fitness Info">
-                </div>
-            </div>
-        </div>
+<!-- Tile Container -->
+<div class="homepage-tiles">
+<!-- Tile 1: Bite-Sized Workouts -->
+<div class="tile">
+<div class="tile-inner">
+<div class="tile-front">
+<img src="/homepage-tiles/bite-sized-front.png" alt="Bite-Sized Workouts">
+</div>
+<div class="tile-back">
+<img src="/homepage-tiles/bite-sized-back.png" alt="Bite-Sized Workouts">
+</div>
+</div>
+</div>
 
-        <!-- Tile 3: Confidence Building -->
-        <div class="tile">
-            <div class="tile-inner">
-                <div class="tile-front">
-                    <img src="/static/homepage-tiles/confidence-front.png" alt="Confidence Building">
-                </div>
-                <div class="tile-back">
-                    <img src="/static/homepage-tiles/confidence-back.png" alt="Confidence Building Info">
-                </div>
-            </div>
-        </div>
+<!-- Tile 2: Personalized Fitness -->
+<div class="tile">
+<div class="tile-inner">
+<div class="tile-front">
+<img src="/homepage-tiles/personal-front.png" alt="Personalized Fitness">
+</div>
+<div class="tile-back">
+<img src="/homepage-tiles/personal-back.png" alt="Personalized Fitness">
+</div>
+</div>
+</div>
 
-        <!-- Tile 4: Flexible & Fun -->
-        <div class="tile">
-            <div class="tile-inner">
-                <div class="tile-front">
-                    <img src="/static/homepage-tiles/flexible-front.png" alt="Flexible & Fun">
-                </div>
-                <div class="tile-back">
-                    <img src="/static/homepage-tiles/flexible-back.png" alt="Flexible & Fun Info">
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- Tile 3: Confidence Building -->
+<div class="tile">
+<div class="tile-inner">
+<div class="tile-front">
+<img src="/homepage-tiles/confidence-front.png" alt="Confidence Buiding">
+</div>
+<div class="tile-back">
+<img src="/homepage-tiles/confidence-back.png" alt="Confidence Building">
+</div>
+</div>
+</div>
+
+<!-- Tile 4: Flexible & Fun -->
+<div class="tile">
+<div class="tile-inner">
+<div class="tile-front">
+<img src="/homepage-tiles/flexible-front.png" alt="Flexible & Fun">
+</div>
+<div class="tile-back">
+<img src="/homepage-tiles/flexible-back.png" alt="Flexible & Fun">
+</div>
+</div>
+</div>
+</div>
+
+<script>
+    document.querySelectorAll('.tile').forEach(tile => {
+      tile.addEventListener('click', function() {
+        this.classList.toggle('flip');
+      });
+    });
+  </script>
+
 
 </body>
-</html>
 
+
+{{ end }}

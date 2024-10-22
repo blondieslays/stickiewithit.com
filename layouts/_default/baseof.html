@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>{{ .Title }}</title>
-
-    <!-- Google Font for Roboto -->
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-    <!-- Link to Custom CSS -->
-    <link rel="stylesheet" href="{{ "css/custom.css" | absURL }}">
+  <title>{{ .Title }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "css/custom.css" | absURL }}">
 </head>
 
 <body>
-    <!-- This h1 will show up on the webpage as a visible headline -->
-    <h1 class="site-title">Stickie with it</h1>
+  <!-- Symbols Menu -->
+  <nav class="symbol-menu">
+    <ul>
+<li><a href="/" title="Home"><img src="/menu-icons/home.png" alt="Home"></a></li>
+<li><a href="/gallery/stickie-method/" title="Stickie Method"><img src="/menu-icons/bite-sized.png" alt="Stickie Method"></a></li>
+<li><a href="/gallery/personalized-fitness/" title="Personalized Fitness"><img src="/menu-icons/personal.png" alt="Personalized Fitness"></a></li>
+<li><a href="/gallery/workouts/" title="Workouts"><img src="/menu-icons/confidence.png" alt="Workouts"></a></li>
+<li><a href="/gallery/learn-more/" title="Learn More"><img src="/menu-icons/flexible.png" alt="Learn More"></a></li> 
+    </ul>
+  </nav>
 
-
-    <!-- This block renders the content from your .md files -->
-    {{ block "main" . }}{{ .Content }}{{ end }}
-
-
+  <!-- Main Content Block -->
+  {{ block "main" . }}{{ .Content }}{{ end }}
 
 </body>
 </html>

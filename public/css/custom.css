@@ -1,59 +1,104 @@
-h1 {
-    font-family: 'Brush Script MT', cursive;
-    color: #e0218a;  /* Barbie Pink */
-    text-align: center;
-    font-size: 5em;  /* Large headline */
-    margin-top: 20px;
-}
-
+/* General site styling */
 body {
-    background-color: white;
-	font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 2em;  
+font-family: 'Roboto Mono', sans-serif;
+background-color: #fff; /* White background for Stickie */
+text-align: center;
+color: #009999; /* Text color */
 }
 
+/* Symbol menu styling */
+.symbol-menu ul {
+list-style: none;
+padding: 0;
+display: flex;
+justify-content: space-around;
+margin-bottom: 20px;
+}
 
+.symbol-menu li {
+display: inline-block;
+margin: 0 15px;
+}
+
+.symbol-menu img {
+width: 50px;
+height: 50px;
+transition: transform 0.3s;
+}
+
+.symbol-menu img:hover {
+transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Title styling */
+h1.site-title {
+font-family: 'Roboto Mono', sans-serif;
+color: #eb77c9; /* Stickie pink */
+text-align: center;
+font-size: 2.5rem;
+}
+
+/* Homepage tiles grid layout */
 .homepage-tiles {
-  max-width: 800px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 20px; /* Space between the tiles */
+display: grid;
+grid-template-columns: repeat(2, 1fr); /* 2 columns for a 2x2 grid */
+gap: 20px; /* Adds padding between the tiles */
+max-width: 600px; /* Keeps it centered on the page */
+margin: 0 auto; /* Centers the grid */
+padding: 20px; /* Adds padding around the grid */
 }
 
-.tile {
-  width: 100%;
-  height: auto;
-  perspective: 1000px;
+/* Styling for individual tiles */
+.homepage-tiles .tile {
+width: 100%; /* Make tiles responsive */
+padding-top: 100%; /* Keeps the height equal to the width for a square shape */
+position: relative; /* Positioning for inner content */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+border-radius: 5px; /* Slight rounding for Post-it note feel */
+transition: transform 0.2s ease-in-out;
+transform-style: preserve-3d;
+cursor: pointer; /* Makes it clear that the tile is clickable */
 }
 
-.tile-inner {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  position: relative;
+/* Inner tile content for flipping effect */
+.homepage-tiles .tile-inner {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+transition: transform 0.6s;
 }
 
-.tile:hover .tile-inner {
-  transform: rotateY(180deg);
-}
-
+/* Front and back of the tile */
 .tile-front, .tile-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+}
+
+
+/* When the tile is clicked, it flips */
+.tile.flip .tile-inner {
+transform: rotateY(180deg);
 }
 
 .tile-back {
-  transform: rotateY(180deg);
+transform: rotateY(180deg); /* For the back side of the tile */
 }
 
-img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
+/* Styling for images inside the tiles */
+.homepage-tiles .tile img {
+width: 100%;
+height: 100%;
+object-fit: cover; /* Ensures the image fills the tile without stretching */
+border-radius: 5px;
+display: block;
 }
 
+/* Optional hover effect for scaling the tile */
+.homepage-tiles .tile:hover {
+transform: scale(1.05);
+}

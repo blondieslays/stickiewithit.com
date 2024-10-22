@@ -11,6 +11,7 @@ images:
   confidence_back: "/static/homepage-tiles/confidence-back.png"
   flexible_front: "/static/homepage-tiles/flexible-front.png"
   flexible_back: "/static/homepage-tiles/flexible-back.png"
+
 ---
 
 <h1>Stickie with it</h1>

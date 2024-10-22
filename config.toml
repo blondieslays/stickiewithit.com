@@ -3,35 +3,83 @@ languageCode = "en-us"
 title = "Stickie with it"
 enableRobotsTXT = true
 
+# Pagination
 [pagination]
 pagerSize = 10
 
+# Language and URLs
 defaultContentLanguage = "en"
 canonifyURLs = true
 
+# Description for SEO
 [params]
-  description = "Stickie With It - Your go-to method for fun, effective workouts using sticky notes!"
+description = "Stickie With It - Your go-to method for fun, effective workouts using sticky notes!"
 
- # Symbol images
-  symbol_yinyang = "/static/menu/yinyang.png"
-  symbol_strong = "/static/menu/strong.png"
-  symbol_stickie = "/static/menu/stickie.png"
-  symbol_mail = "/static/menu/mail.png"
-
-  # Homepage tile images
-  bite_sized_front = "/static/homepage-tiles/bite-sized-front.png"
-  bite_sized_back = "/static/homepage-tiles/bite-sized-back.png"
-  personal_front = "/static/homepage-tiles/personal-front.png"
-  personal_back = "/static/homepage-tiles/personal-back.png"
-  confidence_front = "/static/homepage-tiles/confidence-front.png"
-  confidence_back = "/static/homepage-tiles/confidence-back.png"
-  flexible_front = "/static/homepage-tiles/flexible-front.png"
-  flexible_back = "/static/homepage-tiles/flexible-back.png"
+# Symbol images for navigation menu
+symbol_home = "/menu-icons/home.png"
+symbol_bite_sized = "/menu-icons/bite-sized.png"
+symbol_personal = "/menu-icons/personal.png"
+symbol_confidence = "/menu-icons/confidence.png"
+symbol_flexible = "/menu-icons/flexible.png"
 
 
+# Homepage tile images
+bite_sized_front = "/static/homepage-tiles/bite-sized-front.png"
+bite_sized_back = "/static/homepage-tiles/bite-sized-back.png"
+personal_front = "/static/homepage-tiles/personal-front.png"
+personal_back = "/static/homepage-tiles/personal-back.png"
+confidence_front = "/static/homepage-tiles/confidence-front.png"
+confidence_back = "/static/homepage-tiles/confidence-back.png"
+flexible_front = "/static/homepage-tiles/flexible-front.png"
+flexible_back = "/static/homepage-tiles/flexible-back.png"
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+# Permalinks for gallery pages
+[permalinks]
+gallery = "/gallery/:section/:title/"
+
+# Sitemap settings
+[sitemap]
+changefreq = "monthly"
+priority = 0.5
+filename = "sitemap.xml"
+
+# Enable Git info and disable Hugo generator injection
+enableGitInfo = true
+disableHugoGeneratorInject = true
+
+# Menu for navigation
+[menu]
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+
+[[menu.main]]
+identifier = "stickie-method"
+name = "Stickie Method"
+url = "/gallery/stickie-method/"
+
+[[menu.main]]
+identifier = "workout-descriptions"
+name = "Workout Descriptions"
+url = "/gallery/workout-descriptions/"
+
+[[menu.main]]
+identifier = "stickie-generator"
+name = "Stickie Generator"
+url = "/gallery/stickie-generator/"
+
+[[menu.main]]
+identifier = "learn-more"
+name = "Learn More"
+url = "/gallery/learn-more/"
+
+# Social links
+[social]
+github = "https://github.com/blondieslays"
+linkedin = "https://www.linkedin.com/in/elisedaniellemarion/"
+
+# Outputs
+[outputs]
+home = ["HTML", "RSS", "JSON"]
 

@@ -1,31 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <title>Workout Descriptions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="http://localhost:1313/css/custom.css">
-</head>
+{{ define "main" }}
+<h1 class="page-title">{{ .Title }}</h1>
+<p>{{ .Params.description }}</p>
 
-<body>
-  
-  <nav class="symbol-menu">
-    <ul>
-<li><a href="/" title="Home"><img src="/menu-icons/home.png" alt="Home"></a></li>
-<li><a href="/gallery/stickie-method/" title="Stickie Method"><img src="/menu-icons/bite-sized.png" alt="Stickie Method"></a></li>
-<li><a href="/gallery/workout-descriptions/" title="Personalized Fitness"><img src="/menu-icons/personal.png" alt="Personalized Fitness"></a></li>
-<li><a href="/gallery/workouts/" title="Workouts"><img src="/menu-icons/confidence.png" alt="Workouts"></a></li>
-<li><a href="/gallery/learn-more/" title="Learn More"><img src="/menu-icons/flexible.png" alt="Learn More"></a></li> 
-    </ul>
-  </nav>
-
-  
-  
-<h1 class="page-title">Workout Descriptions</h1>
-<p>Explore all the workout exercises in the Stickie method. Filter by arms, legs, or abs to find personalized exercises for your fitness goals.</p>
-
-
+<!-- Workout Filter -->
 <section class="workout-filter">
   <h2>Filter by Workout</h2>
   <div class="filter-buttons">
@@ -36,7 +13,7 @@
   </div>
 </section>
 
-
+<!-- Exercise List Section -->
 <section class="exercise-list">
   <table>
     <thead>
@@ -51,7 +28,7 @@
       </tr>
     </thead>
     <tbody id="exercise-table">
-      
+      <!-- Manually Add Workouts Here -->
       <tr data-workout="arms">
         <td>Arms</td>
         <td>Biceps</td>
@@ -101,8 +78,5 @@ document.querySelectorAll('.filter-buttons button').forEach(button => {
 </script>
 
 
-
-
-</body>
-</html>
+{{ end }}
 

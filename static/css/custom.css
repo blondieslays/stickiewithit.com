@@ -102,3 +102,51 @@ display: block;
 .homepage-tiles .tile:hover {
 transform: scale(1.05);
 }
+
+
+/* Workout Descriptions Page Styling */
+.page-title {
+  text-align: center;
+  color: #e0218a; /* Stickie pink */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.workout-filter {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filter-buttons button {
+  background-color: #e0218a;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filter-buttons button:hover {
+  background-color: #d0197b;
+}
+
+.exercise-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.exercise-list th, .exercise-list td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.exercise-list th {
+  background-color: #f2f2f2;
+}
+
+.exercise-list tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+

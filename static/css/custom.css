@@ -131,22 +131,53 @@ transform: scale(1.05);
   background-color: #d0197b;
 }
 
-.exercise-list table {
-  width: 100%;
-  border-collapse: collapse;
+/* Workout Cards Grid */
+.workout-cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.exercise-list th, .exercise-list td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: left;
+/* Workout Card Styling */
+.workout-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fdfdfd;
+    width: 100%;
 }
 
-.exercise-list th {
-  background-color: #f2f2f2;
+/* Image Section */
+.workout-image {
+    flex: 1;
+    margin-right: 20px;
 }
 
-.exercise-list tr:nth-child(even) {
-  background-color: #f9f9f9;
+.workout-image img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Section */
+.workout-info {
+    flex: 2;
+    text-align: left;
+}
+
+.workout-info h3 {
+    color: #e0218a;
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}
+
+.workout-info p {
+    margin: 4px 0;
 }
 
